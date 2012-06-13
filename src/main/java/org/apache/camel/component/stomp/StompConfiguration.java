@@ -1,12 +1,11 @@
 package org.apache.camel.component.stomp;
 
-import org.apache.camel.CamelException;
-import org.apache.camel.RuntimeCamelException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import java.net.URI;
 import java.net.URISyntaxException;
+
+import org.apache.camel.RuntimeCamelException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -14,7 +13,7 @@ import java.net.URISyntaxException;
 
 public class StompConfiguration implements Cloneable {
 
-    private static final transient Log LOG = LogFactory.getLog(StompConfiguration.class);
+    private static final transient Logger LOG = LoggerFactory.getLogger(StompConfiguration.class);
 
     private String hostname;
     private Integer port = 61613; //default

@@ -1,13 +1,9 @@
 package org.apache.camel.component.stomp;
 
-import net.ser1.stomp.Client;
-import org.apache.camel.CamelContext;
-import org.apache.camel.RuntimeCamelException;
-import org.apache.camel.impl.DefaultComponent;
-
-import javax.security.auth.login.LoginException;
-import java.io.IOException;
 import java.util.Map;
+
+import org.apache.camel.CamelContext;
+import org.apache.camel.impl.DefaultComponent;
 
 /**
  *

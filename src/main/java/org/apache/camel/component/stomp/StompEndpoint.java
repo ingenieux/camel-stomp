@@ -1,14 +1,18 @@
 package org.apache.camel.component.stomp;
 
+import java.io.IOException;
+
+import javax.security.auth.login.LoginException;
+
 import net.ser1.stomp.Client;
-import org.apache.camel.*;
+
+import org.apache.camel.Consumer;
+import org.apache.camel.Processor;
+import org.apache.camel.Producer;
+import org.apache.camel.RuntimeCamelException;
 import org.apache.camel.impl.DefaultEndpoint;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
-import javax.security.auth.login.LoginException;
-import java.io.IOException;
-import java.net.ConnectException;
 
 /**
  *
@@ -17,7 +21,6 @@ public class StompEndpoint extends DefaultEndpoint {
 
     private static final transient Log LOG = LogFactory.getLog(StompProducer.class);
 
-    private StompComponent stompComponent;
     private StompConfiguration config;
 
     private Client client;
@@ -25,7 +28,6 @@ public class StompEndpoint extends DefaultEndpoint {
 
     public StompEndpoint(String uri, StompComponent component, StompConfiguration config) {
         super(uri, component);
-        this.stompComponent = component;
         this.config = config;
     }
 
