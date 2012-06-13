@@ -2,15 +2,15 @@ package org.apache.camel.component.stomp;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.impl.DefaultProducer;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  *
  */
 public class StompProducer extends DefaultProducer {
 
-    private static final transient Log LOG = LogFactory.getLog(StompProducer.class);
+    private static final transient Logger LOG = LoggerFactory.getLogger(StompConfiguration.class);
 
     private StompConfiguration config;
     private StompEndpoint endpoint;                     

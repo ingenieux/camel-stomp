@@ -11,15 +11,15 @@ import org.apache.camel.Processor;
 import org.apache.camel.Producer;
 import org.apache.camel.RuntimeCamelException;
 import org.apache.camel.impl.DefaultEndpoint;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  *
  */
 public class StompEndpoint extends DefaultEndpoint {
 
-    private static final transient Log LOG = LogFactory.getLog(StompProducer.class);
+    private static final transient Logger LOG = LoggerFactory.getLogger(StompEndpoint.class);
 
     private StompConfiguration config;
 
