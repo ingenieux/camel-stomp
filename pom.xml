@@ -24,7 +24,7 @@
   <groupId>com.github.pedroteixeira</groupId>
   <artifactId>camel-stomp</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1-ingenieux-SNAPSHOT</version>
 
   <name>A Camel Component</name>
   <url>http://www.myorganization.org</url>
